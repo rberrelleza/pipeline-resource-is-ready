@@ -2,3 +2,4 @@ icon: https://okteto.com/okteto-symbol-dark-1.1.png
 deploy:
 - okteto stack deploy 
 - wait-for-it --host=db.${OKTETO_NAMESPACE} --port=3306 --timeout=30 --strict -- echo "mysql is ready!"
+- cue 
